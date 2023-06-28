@@ -1,0 +1,42 @@
+/*
+* popbox.css <http://ronsome.com/projects/Popbox>
+* 2012-12-23
+* (c) Ron Newsome, Jr.
+* Released under a Creative Commons license 
+* <http://creativecommons.org/licenses/by/3.0/us/>
+*/
+
+.rn_popbox {
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	transition: opacity .3s linear;
+}
+
+.rn_popbox_ttl {
+	background: #e7e7e7;
+	color: #333;
+	font: 13px Roboto, Helvetica, Arial, sans-serif;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+.rn_popbox_image {
+	max-width: 90%;
+	max-height: 90%;
+	margin: 10px auto;
+	transition: margin-top .3s linear;
+}
+
+.rn_popbox_fade {
+	opacity: 0.0;
+}
+
+.rn_popbox_fade .rn_popbox_image {
+	margin-top: -50px;
+}
